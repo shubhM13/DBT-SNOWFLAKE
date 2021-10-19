@@ -1,0 +1,16 @@
+dbtsample:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: '$(ENV_SNOWSQL_ACCOUNT)'
+      user: '$(ENV_SNOWSQL_USER)'
+      password: '$(ENV_SNOWSQL_PASSWORD)'
+      role: '$(ENV_SNOWSQL_ROLE)'
+      database: '$(ENV_SNOWSQL_DATABASE)'
+      warehouse: '$(ENV_SNOWSQL_WAREHOUSE)'
+      schema: '$(ENV_SNOWSQL_SCHEMA)'
+      threads: 1
+  
+    
+
